@@ -19,7 +19,7 @@ def fetch_input(day=1) -> str:
     if content.startswith("Please"):
         raise Exception("Unreleased content or something")
     else:
-        with open("input","w") as outfile:
+        with open(".input","w") as outfile:
             outfile.write(content)
     driver.quit()
     return content

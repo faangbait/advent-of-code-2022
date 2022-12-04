@@ -22,9 +22,9 @@ sys.path.append('..')
 import adventify
 
 try:
-    with open('input','r') as infile:
+    with open('.input','r') as infile:
         main(infile)
 except OSError:
     adventify.fetch_input(ADVENT_DAY)
-    with open('input') as infile:
+    with open('.input') as infile:
         main(infile)

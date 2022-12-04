@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+ADVENT_DAY = 4
+
 from io import TextIOWrapper
 
 def is_subset(x_lo: int, x_hi: int, y_lo: int, y_hi: int) -> bool:
@@ -34,3 +37,17 @@ def main(infile: TextIOWrapper):
 
     print(f"{is_subset_count} assignments fully overlap")
     return is_subset_count
+
+####
+
+import sys
+sys.path.append('..')
+import adventify
+
+try:
+    with open('.input','r') as infile:
+        main(infile)
+except OSError:
+    adventify.fetch_input(ADVENT_DAY)
+    with open('.input') as infile:
+        main(infile)
