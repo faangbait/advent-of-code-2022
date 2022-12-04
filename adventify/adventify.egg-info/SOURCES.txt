@@ -1,0 +1,5 @@
+setup.py
+adventify.egg-info/PKG-INFO
+adventify.egg-info/SOURCES.txt
+adventify.egg-info/dependency_links.txt
+adventify.egg-info/top_level.txt

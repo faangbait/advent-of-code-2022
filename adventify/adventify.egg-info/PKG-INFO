@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: adventify
+Version: 0.1
+Summary: Fetches the daily input for advent of code
+Author: faangbait
+Author-email: root@madeof.glass
+License: MIT License
