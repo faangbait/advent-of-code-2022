@@ -16,5 +16,10 @@ def fetch_input(day=1) -> str:
     driver.implicitly_wait(5)
     element = driver.find_element(By.XPATH, "/html/body")
     content = element.text
+    if content.startswith("Please"):
+        raise Exception("Unreleased content or something")
+    else:
+        with open("input","w") as outfile:
+            outfile.write(content)
     driver.quit()
     return content

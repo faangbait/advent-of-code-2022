@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 ADVENT_DAY = 1
 
 from io import TextIOWrapper
@@ -24,7 +25,6 @@ try:
     with open('input','r') as infile:
         main(infile)
 except OSError:
-    with open('input','w') as outfile:
-        outfile.write(adventify.fetch_input(ADVENT_DAY))
+    adventify.fetch_input(ADVENT_DAY)
     with open('input') as infile:
         main(infile)
