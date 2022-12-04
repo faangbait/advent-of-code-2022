@@ -12,6 +12,7 @@ def main(infile: TextIOWrapper):
         pass
 
     print(f"{res}")
+    return res
 
 ####
 
