@@ -18,6 +18,6 @@ def main(infile: TextIOWrapper):
 
 try:
     with open('.input','r') as infile:
-        print(main(infile))
+        main(infile)
 except OSError:
     print("No infile detected - fetch <day>")

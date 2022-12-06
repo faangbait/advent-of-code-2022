@@ -23,3 +23,11 @@ def fetch_input(day=1) -> str:
             outfile.write(content)
     driver.quit()
     return content
+
+if __name__ == "__main__":
+    import sys
+    args = sys.argv
+    if len(args) > 1:
+        fetch_input(day=int(args[1]))
+    else:
+        print("Must be run with a cli argument")
