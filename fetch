@@ -1,0 +1,6 @@
+#!/bin/sh
+source .venv/bin/activate
+rm .input
+python adventify/__init__.py $1
+cp -r template "$1.1"
+cp -r template "$1.2"
